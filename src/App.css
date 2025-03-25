@@ -25,7 +25,11 @@
   .cart-items {
     flex-grow: 2;
     /* flex-shrink: 1; */
-    flex-basis: 0%;
+    /* flex-basis: 0%; */
+  }
+
+  .side-bar {
+    flex-grow: 1;
   }
 
   .order-summary,
