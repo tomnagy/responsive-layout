@@ -20,21 +20,23 @@
 
   .main {
     display: grid;
-    grid-template-areas:
-    'cart order'
-    'cart payment';
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .cart-items {
-    grid-area: cart;
+    grid-area: 1 / 1 / 3 / 2;
   }
 
   .order-summary {
-    grid-area: order;
+    grid-area: 1/2/2/3;
   }
 
   .payment-section {
-    grid-area: payment;
+    grid-area: 2/2/3/3;
   }
 
 
